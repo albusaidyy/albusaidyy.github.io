@@ -1,0 +1,282 @@
+/* Global Desktop View ********************/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: rgba(60, 60, 60);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.header-container {
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    color: white;
+}
+
+header {
+    min-height: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p {
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+.mybutton {
+    padding: 10px 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-left: 20px;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+
+.mybutton:hover {
+    background-color: rgba(160, 160, 160, 0.501);
+    transition: 1s;
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+.mobile-wrapper {
+    display: none;
+}
+
+
+
+.footer-container {
+    background-color: rgb(60, 60, 60);
+    min-height: 100px;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+
+
+
+
+}
+
+footer {
+    min-height: 100px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid rgb(238, 238, 238);
+
+}
+
+
+
+footer p {
+    color: white;
+    font-size: 1rem;
+}
+
+.s-media {
+    display: block;
+    /* margin-left: 10px; */
+    /* padding: 10px; */
+
+}
+
+.media {
+    padding: 10px;
+}
+
+p .copy {
+    margin-right: 10px;
+
+
+}
+
+
+
+
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .col {
+        width: 45%;
+    }
+
+
+    .header-container {
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        padding: 40px 0;
+
+    }
+
+    .mybutton {
+        margin-left: 0%;
+    }
+
+    .mobile-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+    .mob-nav .navbutton:hover {
+        background-color: rgba(160, 160, 160, 0.501);
+        transition: 1s;
+    }
+
+    .navbutton {
+        display: block;
+        background-color: rgb(60, 60, 60);
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+
+    .hide-tablet {
+        display: none;
+    }
+
+    footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+
+
+/* Mobile View */
+@media (max-width: 415px) {
+    .col {
+        width: 100%;
+    }
+
+
+
+    .header-container {
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        padding: 40px 0;
+
+    }
+
+    .mybutton {
+        margin-left: 0%;
+    }
+
+    .mobile-wrapper {
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+
+
+    .navbutton {
+        display: block;
+        background-color: rgb(60, 60, 60);
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+
+    .mob-nav .navbutton:hover {
+        background-color: rgba(160, 160, 160, 0.501);
+        transition: 1s;
+    }
+
+
+    footer {
+        display: block;
+        justify-content: space-between;
+        
+
+    }
+
+    footer p {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+   
+
+}
